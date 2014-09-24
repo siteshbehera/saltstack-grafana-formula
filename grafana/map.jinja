@@ -1,5 +1,3 @@
 {% set grafana = salt['grains.filter_by']({
-    'default': {
-        'cfg': '/etc/grafana/config.js',
-    },
+    'default': {},
 }, merge=salt['pillar.get']('grafana')) %}

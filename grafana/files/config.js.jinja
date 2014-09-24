@@ -1,0 +1,5 @@
+{% from "grafana/map.jinja" import grafana with context -%}
+define(['settings'],
+function (Settings) {
+  return new Settings({{ grafana.config }});
+});

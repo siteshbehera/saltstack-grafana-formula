@@ -2,8 +2,9 @@
 Grafana-Formula
 =============
 
-Formulas to set up and configure grafana. Tested on CentOS 6.5.
-See http://grafana.org/ for details.
+Formulas to set up and configure Grafana. Tested on CentOS 6.5.
+Grafana is an open source, feature rich metrics dashboard and graph editor for 
+Graphite, InfluxDB & OpenTSDB. See http://grafana.org/ for details.
 
 .. note::
 

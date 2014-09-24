@@ -1,5 +1,6 @@
 grafana:
   version: '1.8.0'
+  path: '/etc/grafana/'
   config:
     datasources:
       graphite:
@@ -10,16 +11,18 @@ grafana:
         url: 'http://elasticsearch.domain.com'
         index: 'grafana-dash'
         grafanaDB: true
-      search:
-        max_results: 20
-      default_route: '/dashboard/file/default.json'
-      unsaved_changes_warning: true
-      playlist_timespan: "1m"
-      admin:
-        password: ''
-      window_title_prefix: 'Grafana - '
-      plugins:
-        panels: []
-        dependencies: []
+    search:
+      max_results: 20
+    default_route: '/dashboard/file/default.json'
+    unsaved_changes_warning: true
+    playlist_timespan: "1m"
+    admin:
+      password: ''
+    window_title_prefix: 'Grafana - '
+    plugins:
+      panels: []
+      dependencies: []
   http:
-    type: httpd
+    type: 'httpd'
+    name: 'httpd'
+    path: '/etc/httpd/conf.d/'
